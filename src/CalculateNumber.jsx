@@ -1,11 +1,11 @@
+import {useState} from 'react';
 import axios from 'axios';
-import { useState } from 'react';
 
 function CalculateNumber() {
   const [number, setNumber] = useState(0);
   const [result, setResult] = useState(0);
 
-  const onSubmit = async (event: { preventDefault: () => void }) => {
+  const onSubmit = async (event) => {
     event.preventDefault();
 
     const result = await axios.post('http://localhost:3000/calculate', {

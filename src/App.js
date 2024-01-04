@@ -1,4 +1,4 @@
-import CalculateNumber from './CalculateNumber.tsx';
+import CalculateNumber from './CalculateNumber';
 
 function App() {
   return (
