@@ -8,7 +8,7 @@ function CalculateNumber() {
   const onSubmit = async (event) => {
     event.preventDefault();
 
-    const result = await axios.post('http://localhost:3000/calculate', {
+    const result = await axios.post(`${process.env.REACT_APP_API_URL}/calculate`, {
       number,
     });
 
